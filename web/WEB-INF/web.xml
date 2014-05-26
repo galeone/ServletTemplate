@@ -34,6 +34,14 @@
 		<servlet-name>commentsBlog</servlet-name>
 		<servlet-class>it.unibo.tw.blog.servlet.CommentsServlet</servlet-class>
 	</servlet>
+	
+		<!-- library -->
+		
+	<servlet>
+		<servlet-name>requestLibrary</servlet-name>
+		<servlet-class>it.unibo.tw.library.servlet.RequestServlet</servlet-class>
+	</servlet>
+	
 		 
 	<!--  URLs mapping -->
 		<!--  general -->
@@ -61,6 +69,13 @@
 		<servlet-name>commentsBlog</servlet-name>
 		<url-pattern>/blog/comments</url-pattern>
 	</servlet-mapping>
+	
+		<!-- library -->
+	<servlet-mapping>
+		<servlet-name>requestLibrary</servlet-name>
+		<url-pattern>/library/request</url-pattern>
+	</servlet-mapping>
+		
 
 	
 	<!--  Welcome files -->

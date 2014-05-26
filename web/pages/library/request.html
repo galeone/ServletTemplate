@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+	<meta name="author" content="Paolo Galeone">
+   	<title>Book request</title>
+    <link type="text/css" href="/styles/default.css" rel="stylesheet">
+</head>
+
+<body>
+	<hr />Go to <a href="changeDate.html">Change date form</a>
+	<hr />
+	<h1 id="header">Book request</h1>
+	<div>
+		<form id="reqfrm" method="post" action="/ServletTemplate/library/request">
+		<div>
+			<label for="cf">CF:</label> <input type="text" name="cf" id="cf"><br />
+			<label for="title">Book Title:</label> <input type="text" name="title" id="title"><br />
+			<label for="surname">Author surame:</label> <input type="text" name="title" id="title"><br />
+			<label for="collectionDate">Collection Date:</label> <input type="text" name="collectionDate" id="collectionDate"> <small>Format: ddmm</small><br />
+			<label for="returnDate">Return Date:</label> <input type="text" name="returnDate" id="returnDate"><small>Format: ddmm</small><br />
+			<input type="submit" name="action" value="request">
+			<input type="submit" name="action" value="finalize"><br />
+			<small>Use finalize to terminate the request of the books.</small>
+		</div>
+		</form>
+	</div>
+	<div id="footer">
+		This is a sample footer &copy; 2014.
+	</div>
+</body>
+</html>
