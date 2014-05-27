@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<titoli_di_studio person="nome cognome">
+	<laurea>
+		<anno>2003</anno>
+		<mese>Luglio</mese>
+	</laurea>
+	<dottorato>
+		<anno>2008</anno>
+		<mese>Aprile</mese>
+	</dottorato>
+</titoli_di_studio>  
