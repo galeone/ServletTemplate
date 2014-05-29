@@ -14,7 +14,7 @@ public class LoginServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 7437071575710203911L;
 	public final static String LOGIN_OK = "login_ok";
-	private static String LOGIN_NEXT = "/edit";
+	public static String LOGIN_NEXT = "/edit";
 	private final String LOGIN_FORM = "/pages/login.jsp";
 
 	@Override

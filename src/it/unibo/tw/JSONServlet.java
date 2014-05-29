@@ -1,6 +1,7 @@
 package it.unibo.tw;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -50,11 +51,12 @@ public class JSONServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
 		response.setContentType("text/javascript");
+		PrintWriter out = response.getWriter();
 
 		try {
 			// Cambiare il new String[]{} con l'oggetto che vogliamo ritornare
 			// in formato json
-			response.getWriter().println(serializer.toJSON(new String[] {}));
+			out.println(serializer.toJSON(new String[] {}));
 		} catch (MarshallException e) {
 			System.err.println(e.getMessage());
 			e.printStackTrace();
