@@ -55,3 +55,15 @@ th {
 	background-color: grey;
 	border: 1px solid black;
 }
+
+#menu, #content {
+	float:left;
+}
+
+#menu {
+	margin-right:20px;
+}
+
+#footer {
+	clear:both;
+}
