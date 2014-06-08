@@ -4,16 +4,17 @@
    <head>
    	  <meta name="author" content="Paolo Galeone" />
    	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>ServletTemplate - Homepage</title>
+      <title>ServletTemplate - Upload</title>
       <link type="text/css" href="styles/default.css" rel="stylesheet"></link>
    </head>
    
    <body>
- 
-      <p>
-      	Please wait for the web application to start... &nbsp;
-		<img alt="wait" title="wait" src="images/wait.gif"/>
-      </p>
+   
+   <form action="upload" method="post" enctype="multipart/form-data">
+    	<input type="text" name="description" />
+    	<input type="file" name="file" />
+    	<input type="submit" />
+	</form>
 
    </body>
 </html>
